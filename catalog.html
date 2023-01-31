@@ -42,23 +42,29 @@
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог жилья с фильтрами</h2>
-        <form class="catalog-filter" action="#" method="get">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="pool" checked/>Бассейн</label>
+                  <input class="control-input" type="checkbox" name="pool" checked/>
+                  Бассейн
+                </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked/>Парковка</label>
+                  <input class="control-input" type="checkbox" name="parking" checked/>
+                  Парковка
+                </label>
               </li>
 
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="Wifi"/>Wi-Fi</label>
+                  <input class="control-input" type="checkbox" name="WiFi"/>
+                  Wi-Fi
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -68,19 +74,31 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing" value="hotel" checked/>Гостиница</label>
+                  <input class="control-input" type="radio" name="housing" value="hotel" checked/>
+                  Гостиница
+                </label>
               </li>
 
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing" value="motel"/>Мотель</label>
+                  <input class="control-input" type="radio" name="housing" value="motel"/>
+                  Мотель
+                </label>
               </li>
 
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing" value="apartments"/>Апартаменты</label>
+                  <input class="control-input" type="radio" name="housing" value="apartments"/>
+                  Апартаменты
+                </label>
               </li>
             </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость</legend>
+            <input type="number" name="price" value="0">
+            <input type="number" name="price" value="9000">
           </fieldset>
 
           <button class="button" type="submit">Применить</button>
@@ -98,7 +116,7 @@
       <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt=""/>
+            <img class="product-card-image" src="#" alt="Amara Resort & Spa."/>
             <h3>Amara Resort & Spa</h3>
           </a>
           <b class="product-card-price">от 4000Р</b>
@@ -108,7 +126,7 @@
 
         <li class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt=""/>
+            <img class="product-card-image" src="#" alt="Villas at Poco Diablo."/>
             <h3>Villas at Poco Diablo</h3>
           </a>
           <b class="product-card-price">от 5000Р</b>
@@ -117,7 +135,7 @@
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt=""/>
+            <img class="product-card-image" src="#" alt="Desert Quail Inn."/>
             <h3>Desert Quail Inn</h3>
           </a>
           <b class="product-card-price">от 2500Р</b>
@@ -126,7 +144,7 @@
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt=""/>
+            <img class="product-card-image" src="#" alt="GreenTree Inn."/>
             <h3>GreenTree Inn</h3>
           </a>
           <b class="product-card-price">от 1500Р</b>
@@ -196,7 +214,9 @@
           +7 (812) 812-12-12
         </a>
         <p class="about-text">
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            .html academy
+          </a>
         </p>
       </section>
     </footer>
