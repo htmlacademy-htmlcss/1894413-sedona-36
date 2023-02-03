@@ -12,17 +12,35 @@
         <ul class="navigation-list">
           <li class="navigation-items">
             <a class="navigation-link">
-              <img class="logo" src="#" alt="Логотип Седона"/>
+              <img class="logo" src="./images/logotype sedona.svg" width="138" height="64" alt="Логотип Седона."/>
             </a>
           </li>
           <li class="navigation-items">
-            <a class="navigation-link" href="#">Главная</a>
+           <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-items">
-            <a class="navigation-link" href="#">О Седоне</a>
+           <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-items">
-            <a class="navigation-link-current" href="#">Гостиницы</a>
+            <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-items">
+            <a class="navigation-link" href="#">
+              <img src="./images/search.svg" width="20" height="20">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-items navigation-user">
+            <a class="navigation-link" href="#">
+              <img src="./images/heart.svg" width="20" height="20">
+              <span class="visually-hidden">Избранное</span>
+              <span>12</span>
+            </a>
+          </li>
+          <li class="navigation-items navigation-user">
+            <a class="navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -32,7 +50,9 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Главная</a>
+            <a class="breadcrumbs-link" href="#"><img src="./images/icon-home-breadcrumbs.svg" width="12" height="12">
+              Главная
+            </a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -113,44 +133,58 @@
         <option value="popular">Сначала популярные</option>
       </select>
 
+      <a href="#"><span class="visually-hidden">gallery</span></a>
+      <a href="#"><span class="visually-hidden">list</span></a>
+      <a href="#"><span class="visually-hidden">table</span></a>
+
       <ul class="product-list">
         <li class="product-card">
-          <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Amara Resort & Spa."/>
+          <button class="product-card-link">
+            <img class="product-card-image" src="./images/hotels/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa."/>
             <h3>Amara Resort & Spa</h3>
-          </a>
+          </button>
           <b class="product-card-price">от 4000Р</b>
           <a class="product-card-button-button">Подробнее</a>
           <a class="product-card-button-button">В избранное</a>
+          <span class="product-card-button-button">Рейтинг:8,5</span>
         </li>
 
         <li class="product-card">
-          <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Villas at Poco Diablo."/>
+          <button class="product-card-link">
+            <img class="product-card-image" src="./images/hotels/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo."/>
             <h3>Villas at Poco Diablo</h3>
-          </a>
+          </button>
           <b class="product-card-price">от 5000Р</b>
           <a class="product-card-button-button">Подробнее</a>
           <a class="product-card-button-button">В избранном</a>
+          <span class="product-card-button-button">Рейтинг:9,2</span>
         </li>
+
+        <span></span>
+
         <li class="product-card">
-          <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Desert Quail Inn."/>
+          <button class="product-card-link">
+            <img class="product-card-image" src="./images/hotels/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn."/>
             <h3>Desert Quail Inn</h3>
-          </a>
+          </button>
           <b class="product-card-price">от 2500Р</b>
           <a class="product-card-button-button">Подробнее</a>
           <a class="product-card-button-button">В избранное</a>
+          <span class="product-card-button-button">Рейтинг:6,9</span>
         </li>
+
+      <span></span>
         <li class="product-card">
-          <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="GreenTree Inn."/>
+          <button class="product-card-link">
+            <img class="product-card-image" src="./images/hotels/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn."/>
             <h3>GreenTree Inn</h3>
-          </a>
+          </button>
           <b class="product-card-price">от 1500Р</b>
           <a class="product-card-button-button">Подробнее</a>
           <a class="product-card-button-button">В избранное</a>
+          <span class="product-card-button-button">Рейтинг:5,0</span>
         </li>
+        <span></span>
       </ul>
 
       <ul class="pagination">
@@ -210,12 +244,11 @@
 
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts-adress-phone" href="tel:+78128121212">
-          +7 (812) 812-12-12
-        </a>
+        <a class="footer-contacts-adress-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <p class="about-text">
+
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            .html academy
+            <img alt=".html academy" src="./images/logo-htmlacademy.svg" width="115" height="33">
           </a>
         </p>
       </section>
